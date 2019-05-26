@@ -1,0 +1,8 @@
+jupyter
+singledispatch
+nltk
+spacy
+scikit-learn
+matplotlib
+unidecode
+pandas

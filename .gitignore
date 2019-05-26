@@ -1,0 +1,7 @@
+/data/
+/models/
+.DS_Store
+.ipynb_checkpoints
+notebooks/.ipynb_checkpoints
+notebooks/Estudo dos dados.ipynb
+notebooks/Prova26-Copy1.05.19.ipynb
