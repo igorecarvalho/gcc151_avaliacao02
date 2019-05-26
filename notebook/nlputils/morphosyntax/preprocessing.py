@@ -2,7 +2,7 @@ import spacy
 
 class Preprocessing:
     
-    #contrutor da classe, recebe o língua para ser trabalhada como parametro e atribui para uso do spacy
+    #contrutor da classe, recebe a língua para ser trabalhada como parametro e atribui para uso do spacy
     def __init__(self, language='../models/pt_core_news_sm-2.1.0'):
         self.nlp = spacy.load(language)
         
@@ -14,7 +14,7 @@ class Preprocessing:
         #lista que que irá conter as tuplas de cada palavra da string
         ms_tags = []
         for token in doc:
-            #é adicionado a lista ms_tags a tupla(token1, etiqueta_morfossintática para cada palavra
+            #é adicionado a lista ms_tags a tupla(palavra, etiqueta_morfossintática para cada palavra)
             ms_tags.append((token.text, token.pos_))
-        #retorna a lista contendo uma tupla para cada palavra do string
+        #retorna a lista contendo uma tupla para cada palavra da string
         return ms_tags
